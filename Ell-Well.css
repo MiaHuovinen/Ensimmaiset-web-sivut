@@ -1,0 +1,260 @@
+body {
+    background-color: rgba(128, 128, 128, 0.158);
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: auto;
+}
+#taustavari {
+    background-color: white;
+    width: 100%;
+    border-bottom: solid rgb(70, 113, 184) 4px;
+}
+header {
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+    padding-top: 30px;
+    flex-flow: row nowrap;
+    background-color: white;
+}
+#logojaotsikko {
+    display: flex;
+    flex-flow: row nowrap;
+}
+#logojaotsikko h1 {
+    width: 75%;
+    align-self: center;
+    margin-right: 2%;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 24px;
+}
+#logojaotsikko a {
+    width: 13%;
+}
+#logo {
+    width: 100%;
+    min-width: 30px;
+    max-width: 150px;
+    padding-left: 1%;
+}
+nav {
+    width: 100%;
+    text-align: right;
+    align-self: flex-end;
+    color: white;
+}
+#linkit a:link, a:visited {
+    background-color: rgb(70, 113, 184);
+    color: inherit;
+    padding: 0.5% 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5% 5% 0% 0%;
+  }
+#linkit a:hover, a:active {
+    background-color: rgb(90, 131, 197);
+  }
+.hampurilainen {
+    width: 120px;
+    display: none;
+    position: fixed;
+    right: 0;
+    background-color: rgb(70, 113, 184);
+    color: white;
+    text-align: center;
+    padding: 4px 0;
+}
+#topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    background-color: rgb(45, 73, 119);
+    text-align: left;
+    float: right;
+    position: fixed;
+    right: 0;
+    top: 30px;
+    display: none;
+  }
+  
+#topnav a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+#topnav a:hover {
+    background-color:rgb(70, 113, 184);
+    color: white;
+  }
+section {
+    width: 90%;
+    max-width: 1600px;
+    margin: 1% auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background-image: url(etusivukuva.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 6px 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+.teksti {
+    background-color: rgba(255, 255, 255, 0.603);
+    width: 40%;
+    margin: 1% 2%;
+    padding: 1%;
+    border-bottom: solid rgb(223, 93, 7) 3px;
+    align-self: flex-start;
+    color:black;
+    box-shadow: 4px 0 8px 0 rgba(0, 0, 0, 0.2), 6px 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+.teksti a:link, a:visited {
+    width: 100%;
+    color:inherit;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+  }
+  .teksti a:hover, a:active {
+    color:rgba(0, 0, 0, 0.685);
+  }
+  #footertausta {
+    width: 100%;
+    padding: 1% 0;
+    background-color:rgb(44, 72, 114);
+  }
+  footer {
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow:row nowrap;
+    background-color: rgb(44, 72, 114);
+    height: 120px;
+    
+  }
+.yhteystiedot {
+    padding: 1%;
+    color:white;
+    font-size: 13px;
+    list-style-type: none;
+    margin-top: 0.5%;
+}
+#palvelut {
+    flex-flow: column wrap;
+    background-image: url(kuva1.jpg);
+    margin-bottom: 0.5%;
+}
+#yhteystiedot {
+    flex-flow: row nowrap;
+    background-image: none;
+    background-color: white;
+    align-items: center;
+}
+.yhteystietoboksi {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#pikkuboksi {
+    width:50%;
+    border-left: solid rgb(211, 135, 85) 5px;
+    margin: auto;
+    padding: 0 2%;
+}
+#yhteystietokuva {
+    width: 100%;
+}
+#kuva3 {
+    width: 50%;
+    height: auto;
+}
+.palveluteksti {
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    align-self: flex-end;
+    padding: 1% 2%;
+    border-bottom: solid rgb(70, 113, 184) 3px;
+
+}
+
+@media  screen and (max-width:1200px ) {
+    .teksti {
+        width: 60%;
+        background-color: rgba(255, 255, 255, 0.664);
+        
+    }
+    #topnav {
+        display: none;
+    }
+    #pikkuboksi {
+        width: 90%;
+        border-left: none;
+    }
+}
+
+
+@media  screen and (max-width:900px ) {
+    .teksti {
+        width: 90%;
+        align-self: center;
+        background-color: rgba(255, 255, 255, 0.815);
+    }
+    .palveluteksti {
+        width: 90%;
+        margin: auto;
+    }
+    #logojaotsikko h1 {
+        font-size: 20px;
+        width: 83%;
+    }
+    footer {
+        width: 95%;
+    }
+    section {
+        width: 100%;
+    }
+    header {
+        width: 90%;
+    }
+    #linkit {
+        display: none;
+    }
+    .hampurilainen {
+        display: inline;
+    }
+    #yhteystiedot {
+        flex-flow: column nowrap;
+        background-image: none;
+        background-color: white;
+        align-items: center;
+    }
+    .yhteystietoboksi {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+}
+@media  screen and (max-width:400px ) {
+    #logojaotsikko h1 {
+        font-size: 16px;
+    }
+    body {
+        font-size: 14px;
+    }
+}
